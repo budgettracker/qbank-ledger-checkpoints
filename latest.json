@@ -1,26 +1,26 @@
 {
   "ledger": "qbank",
-  "checkpointHash": "2358d3dd227f39c55be94774ef3ee426b3401d44d19e480ae6c833e6a29de8b7",
-  "chainHead": "1f94e04bcfe61921377a6f50e1d3fc5679a8d3f23a012f7949d13fd524fd19a5",
-  "transactionCount": 2,
-  "circulating": 100000,
+  "checkpointHash": "6b42e950bf5d72a77542bc687fc93b8ca4ca9f25bcaca79da57326216789aedf",
+  "chainHead": "b1e5c78547a1eac5600cefe651ae91f9229fe0f03924bcc84124a964cce7f63c",
+  "transactionCount": 3,
+  "circulating": 1000500,
   "fixedSupply": 21000000,
-  "previousCheckpointHash": null,
-  "signature": "tBHVoIT46pjCYU7HCqsOkEECIXwdBrTzgvw+NIvucbagF0oyXEIxA04o/RjyvF4LReMKTLIBWoBunCJWr380AA==",
+  "previousCheckpointHash": "2358d3dd227f39c55be94774ef3ee426b3401d44d19e480ae6c833e6a29de8b7",
+  "signature": "OCvcMKDkhb3tVp88DevaVxMwtYWenus1S6B7XthryK2T1NuJ6JbNs5XwwSM1gslc84WVxc9DnpdsDYun0+kRDg==",
   "publicKey": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEASXRR7I2GmYb+Cn1Y7ohteXtpVU/WqT8KS4OI3MYhFhU=\n-----END PUBLIC KEY-----\n",
   "signatureAlgorithm": "ed25519",
   "signatureStatus": "signed",
   "payload": {
     "ledger": "qbank",
     "version": 1,
-    "chainHead": "1f94e04bcfe61921377a6f50e1d3fc5679a8d3f23a012f7949d13fd524fd19a5",
-    "createdAt": "2026-05-09T22:37:37.212Z",
-    "circulating": 100000,
+    "chainHead": "b1e5c78547a1eac5600cefe651ae91f9229fe0f03924bcc84124a964cce7f63c",
+    "createdAt": "2026-05-09T23:04:29.037Z",
+    "circulating": 1000500,
     "fixedSupply": 21000000,
-    "checkpointHash": "2358d3dd227f39c55be94774ef3ee426b3401d44d19e480ae6c833e6a29de8b7",
+    "checkpointHash": "6b42e950bf5d72a77542bc687fc93b8ca4ca9f25bcaca79da57326216789aedf",
     "signatureStatus": "signed",
-    "transactionCount": 2,
-    "previousCheckpointHash": null
+    "transactionCount": 3,
+    "previousCheckpointHash": "2358d3dd227f39c55be94774ef3ee426b3401d44d19e480ae6c833e6a29de8b7"
   },
-  "createdAt": "2026-05-09T22:37:36.800Z"
+  "createdAt": "2026-05-09T23:04:28.919Z"
 }
