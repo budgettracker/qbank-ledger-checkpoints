@@ -1,26 +1,26 @@
 {
   "ledger": "qbank",
-  "checkpointHash": "6b9263cc9c3ebbfd25fa135e9a1dbd404a20b6a06116ad884c9c969e0a69bbfe",
-  "chainHead": "ecac451300eafae6d2c62ebf72c59b17476c21dbbba7bf224ebbf0bc19d547a2",
-  "transactionCount": 10,
-  "circulating": 5000087,
+  "checkpointHash": "2358d3dd227f39c55be94774ef3ee426b3401d44d19e480ae6c833e6a29de8b7",
+  "chainHead": "1f94e04bcfe61921377a6f50e1d3fc5679a8d3f23a012f7949d13fd524fd19a5",
+  "transactionCount": 2,
+  "circulating": 100000,
   "fixedSupply": 21000000,
   "previousCheckpointHash": null,
-  "signature": "+0dHis1E3SM7FLywcqh/5/2thaBhMDdrlHr5sqRKPT5A2t5ypMOefi2qQ3tpxT7PVlpfLLUYx1xFUcgob8J5CQ==",
+  "signature": "tBHVoIT46pjCYU7HCqsOkEECIXwdBrTzgvw+NIvucbagF0oyXEIxA04o/RjyvF4LReMKTLIBWoBunCJWr380AA==",
   "publicKey": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEASXRR7I2GmYb+Cn1Y7ohteXtpVU/WqT8KS4OI3MYhFhU=\n-----END PUBLIC KEY-----\n",
   "signatureAlgorithm": "ed25519",
   "signatureStatus": "signed",
   "payload": {
     "ledger": "qbank",
     "version": 1,
-    "chainHead": "ecac451300eafae6d2c62ebf72c59b17476c21dbbba7bf224ebbf0bc19d547a2",
-    "createdAt": "2026-05-09T18:31:03.873Z",
-    "circulating": 5000087,
+    "chainHead": "1f94e04bcfe61921377a6f50e1d3fc5679a8d3f23a012f7949d13fd524fd19a5",
+    "createdAt": "2026-05-09T22:37:37.212Z",
+    "circulating": 100000,
     "fixedSupply": 21000000,
-    "checkpointHash": "6b9263cc9c3ebbfd25fa135e9a1dbd404a20b6a06116ad884c9c969e0a69bbfe",
+    "checkpointHash": "2358d3dd227f39c55be94774ef3ee426b3401d44d19e480ae6c833e6a29de8b7",
     "signatureStatus": "signed",
-    "transactionCount": 10,
+    "transactionCount": 2,
     "previousCheckpointHash": null
   },
-  "createdAt": "2026-05-09T18:31:03.861Z"
+  "createdAt": "2026-05-09T22:37:36.800Z"
 }
