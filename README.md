@@ -23,8 +23,10 @@ npm run verify:qbank -- https://quorable.com
 
 The verifier downloads QBank's public proof export, rebuilds the proof chain, checks that the latest checkpoint matches the current chain head, and verifies the Ed25519 signature when a signature is present.
 
-## Publishing
+## Current publishing target
 
-Game Builder publishes here when `QBANK_CHECKPOINT_GITHUB_TOKEN` is configured on the server. The token should only have Contents read/write access to this repository.
+- Owner: `budgettracker`
+- Repo: `qbank-ledger-checkpoints`
+- Branch: `main`
 
 Only checkpoint receipts belong in this repository. Do not publish private account data, raw user IDs, auth tokens, or database backups here.
