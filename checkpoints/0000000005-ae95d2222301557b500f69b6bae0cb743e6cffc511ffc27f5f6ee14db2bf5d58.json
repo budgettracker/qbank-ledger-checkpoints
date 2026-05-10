@@ -1,0 +1,26 @@
+{
+  "ledger": "qbank",
+  "checkpointHash": "ae95d2222301557b500f69b6bae0cb743e6cffc511ffc27f5f6ee14db2bf5d58",
+  "chainHead": "362ce2606dba35bd446fe716b5b25c35bb7663aef833994db408089b5331d630",
+  "transactionCount": 5,
+  "circulating": 1001000,
+  "fixedSupply": 21000000,
+  "previousCheckpointHash": "985304d8bbac70b1b4949180e7b3740e4e65df1207405dd22d7a110940903fb7",
+  "signature": "qWOK2AhMnERNvAh1r2Zzv4azKP7CpIX3V9dhY0qnly0lGEafyswyQuwyP9+7oGnapQ+7qJFK4bnsxVBWSz1pAA==",
+  "publicKey": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEASXRR7I2GmYb+Cn1Y7ohteXtpVU/WqT8KS4OI3MYhFhU=\n-----END PUBLIC KEY-----\n",
+  "signatureAlgorithm": "ed25519",
+  "signatureStatus": "signed",
+  "payload": {
+    "ledger": "qbank",
+    "version": 1,
+    "chainHead": "362ce2606dba35bd446fe716b5b25c35bb7663aef833994db408089b5331d630",
+    "createdAt": "2026-05-10T13:17:17.103Z",
+    "circulating": 1001000,
+    "fixedSupply": 21000000,
+    "checkpointHash": "ae95d2222301557b500f69b6bae0cb743e6cffc511ffc27f5f6ee14db2bf5d58",
+    "signatureStatus": "signed",
+    "transactionCount": 5,
+    "previousCheckpointHash": "985304d8bbac70b1b4949180e7b3740e4e65df1207405dd22d7a110940903fb7"
+  },
+  "createdAt": "2026-05-10T13:17:16.909Z"
+}
