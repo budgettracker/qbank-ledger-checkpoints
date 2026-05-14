@@ -1,26 +1,88 @@
 {
   "ledger": "qbank",
-  "checkpointHash": "ae95d2222301557b500f69b6bae0cb743e6cffc511ffc27f5f6ee14db2bf5d58",
-  "chainHead": "362ce2606dba35bd446fe716b5b25c35bb7663aef833994db408089b5331d630",
-  "transactionCount": 5,
-  "circulating": 1001000,
+  "checkpointHash": "f9daa8b0b8fad1379e20decde337741198d9e3ecf6632783427f7034f0f5eeef",
+  "chainHead": "06fcabff30f580f260ffdea82df19b973c42128491f2ae2a92d0af575fdc7bcf",
+  "transactionCount": 1,
+  "circulating": 100000,
   "fixedSupply": 21000000,
-  "previousCheckpointHash": "985304d8bbac70b1b4949180e7b3740e4e65df1207405dd22d7a110940903fb7",
-  "signature": "qWOK2AhMnERNvAh1r2Zzv4azKP7CpIX3V9dhY0qnly0lGEafyswyQuwyP9+7oGnapQ+7qJFK4bnsxVBWSz1pAA==",
+  "previousCheckpointHash": null,
+  "signature": "1px8rHp0Yijfaf5AKkb2uHZgaWFxtgCLbsGqS2mvOl1OtHegUNYjZ/EHfaWFAALwtfbndExbrjlOC3UC7v1pAA==",
   "publicKey": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEASXRR7I2GmYb+Cn1Y7ohteXtpVU/WqT8KS4OI3MYhFhU=\n-----END PUBLIC KEY-----\n",
   "signatureAlgorithm": "ed25519",
   "signatureStatus": "signed",
   "payload": {
     "ledger": "qbank",
     "version": 1,
-    "chainHead": "362ce2606dba35bd446fe716b5b25c35bb7663aef833994db408089b5331d630",
-    "createdAt": "2026-05-10T13:17:17.103Z",
-    "circulating": 1001000,
+    "chainHead": "06fcabff30f580f260ffdea82df19b973c42128491f2ae2a92d0af575fdc7bcf",
+    "createdAt": "2026-05-14T15:10:07.807Z",
+    "circulating": 100000,
     "fixedSupply": 21000000,
-    "checkpointHash": "ae95d2222301557b500f69b6bae0cb743e6cffc511ffc27f5f6ee14db2bf5d58",
+    "releasePolicy": {
+      "hash": "8597f17493ad616d271e8fd67197230a98bced5f2500ce2d00df37e676d32dc6",
+      "amount": 500,
+      "policy": "qbank_reserve_daily_release",
+      "source": "Q Reserve",
+      "version": 1,
+      "currency": "Q$",
+      "interval": "P1D",
+      "timezone": "UTC",
+      "changeRule": "Any change creates a new policy hash and is visible in every later QBank transaction and checkpoint.",
+      "destination": "QBank liquidity",
+      "effectiveDate": "2026-05-10",
+      "missedReleaseRule": "Missed releases do not accumulate. A skipped day cannot be made up by releasing extra later.",
+      "reserveReturnRule": "Q$ may return to Q Reserve through repayments or explicit reserve-return transactions, increasing the projected reserve-empty date.",
+      "minimumIntervalHours": 24,
+      "maxReleasePerInterval": 500,
+      "genesisFundingExcluded": true,
+      "appliesToTransactionKinds": [
+        "q_reserve_daily_release",
+        "q_reserve_daily_loan"
+      ]
+    },
+    "checkpointHash": "f9daa8b0b8fad1379e20decde337741198d9e3ecf6632783427f7034f0f5eeef",
+    "policyCoverage": {
+      "policyHash": "8597f17493ad616d271e8fd67197230a98bced5f2500ce2d00df37e676d32dc6",
+      "recommendedAction": null,
+      "qbankUsePolicyHash": "4e3f705b91d4f753512d0897a39242db13e7d2d1be88cea0396c761f0ce6af66",
+      "databasePolicyStatus": "valid",
+      "committedTransactions": 1,
+      "invalidReserveReleases": [],
+      "qbankUsePolicyEnforced": true,
+      "invalidPolicyCommitments": [],
+      "reserveReleasePolicyEnforced": true,
+      "invalidQBankUsePolicyOutflows": [],
+      "qbankUseCommittedTransactions": 1,
+      "invalidQBankUsePolicyCommitments": []
+    },
+    "qbankUsePolicy": {
+      "hash": "4e3f705b91d4f753512d0897a39242db13e7d2d1be88cea0396c761f0ce6af66",
+      "policy": "qbank_liquidity_use",
+      "source": "QBank operating reserve",
+      "version": 1,
+      "limitRule": "A user starts with a small loan limit. Daily Quorable activity can increase that limit. Fully repaid prior QBank loans can increase it only when backed by enough daily activity claims, so borrow-and-repay loops alone cannot farm higher limits. A user with an active loan cannot take another loan until it is paid off.",
+      "changeRule": "Any change creates a new policy hash and is visible in every later QBank transaction and checkpoint.",
+      "allowedPurpose": "QBank operating funds may only leave QBank through approved loan or credit draw flows.",
+      "repaidLoanBonus": 250,
+      "maxUserLoanLimit": 5000,
+      "balanceVisibility": "QBank may show balances and ledger proof, but balance display does not move Q$.",
+      "activityRewardBonus": 25,
+      "allowedOutflowKinds": [
+        "qbank_loan",
+        "quorable_business_loan",
+        "quorable_business_credit_draw"
+      ],
+      "blockedOutflowKinds": [
+        "transfer",
+        "admin_grant",
+        "manual_adjustment"
+      ],
+      "oneActiveLoanPerUser": true,
+      "startingUserLoanLimit": 100,
+      "activityClaimsPerRepaidLoanBonus": 7
+    },
     "signatureStatus": "signed",
-    "transactionCount": 5,
-    "previousCheckpointHash": "985304d8bbac70b1b4949180e7b3740e4e65df1207405dd22d7a110940903fb7"
+    "transactionCount": 1,
+    "previousCheckpointHash": null
   },
-  "createdAt": "2026-05-10T13:17:16.909Z"
+  "createdAt": "2026-05-14T15:10:07.191Z"
 }
