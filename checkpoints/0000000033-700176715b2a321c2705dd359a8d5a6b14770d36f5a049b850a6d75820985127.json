@@ -1,0 +1,88 @@
+{
+  "ledger": "qbank",
+  "checkpointHash": "700176715b2a321c2705dd359a8d5a6b14770d36f5a049b850a6d75820985127",
+  "chainHead": "ef12388106611dc72fab32cefce8d6bf6669a680901c6f3eac0bb1ae0c7ae8bf",
+  "transactionCount": 33,
+  "circulating": 116000,
+  "fixedSupply": 21000000,
+  "previousCheckpointHash": "ab87715a4121333e08e2550fc613626f58a7610123068078d152d9028cc99d08",
+  "signature": "4Pn5MwYxBB6hnB9rdv5SDNkrLSele2pFSf9PUEOcYTqI/Fkk3CAtRy7mBwsf6EzQGbOtNpZT0dFH40/zc463BQ==",
+  "publicKey": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEASXRR7I2GmYb+Cn1Y7ohteXtpVU/WqT8KS4OI3MYhFhU=\n-----END PUBLIC KEY-----\n",
+  "signatureAlgorithm": "ed25519",
+  "signatureStatus": "signed",
+  "payload": {
+    "ledger": "qbank",
+    "version": 1,
+    "chainHead": "ef12388106611dc72fab32cefce8d6bf6669a680901c6f3eac0bb1ae0c7ae8bf",
+    "createdAt": "2026-06-14T23:36:57.421Z",
+    "circulating": 116000,
+    "fixedSupply": 21000000,
+    "releasePolicy": {
+      "hash": "8597f17493ad616d271e8fd67197230a98bced5f2500ce2d00df37e676d32dc6",
+      "amount": 500,
+      "policy": "qbank_reserve_daily_release",
+      "source": "Q Reserve",
+      "version": 1,
+      "currency": "Q$",
+      "interval": "P1D",
+      "timezone": "UTC",
+      "changeRule": "Any change creates a new policy hash and is visible in every later QBank transaction and checkpoint.",
+      "destination": "QBank liquidity",
+      "effectiveDate": "2026-05-10",
+      "missedReleaseRule": "Missed releases do not accumulate. A skipped day cannot be made up by releasing extra later.",
+      "reserveReturnRule": "Q$ may return to Q Reserve through repayments or explicit reserve-return transactions, increasing the projected reserve-empty date.",
+      "minimumIntervalHours": 24,
+      "maxReleasePerInterval": 500,
+      "genesisFundingExcluded": true,
+      "appliesToTransactionKinds": [
+        "q_reserve_daily_release",
+        "q_reserve_daily_loan"
+      ]
+    },
+    "checkpointHash": "700176715b2a321c2705dd359a8d5a6b14770d36f5a049b850a6d75820985127",
+    "policyCoverage": {
+      "policyHash": "8597f17493ad616d271e8fd67197230a98bced5f2500ce2d00df37e676d32dc6",
+      "recommendedAction": null,
+      "qbankUsePolicyHash": "4e3f705b91d4f753512d0897a39242db13e7d2d1be88cea0396c761f0ce6af66",
+      "databasePolicyStatus": "valid",
+      "committedTransactions": 33,
+      "invalidReserveReleases": [],
+      "qbankUsePolicyEnforced": true,
+      "invalidPolicyCommitments": [],
+      "reserveReleasePolicyEnforced": true,
+      "invalidQBankUsePolicyOutflows": [],
+      "qbankUseCommittedTransactions": 33,
+      "invalidQBankUsePolicyCommitments": []
+    },
+    "qbankUsePolicy": {
+      "hash": "4e3f705b91d4f753512d0897a39242db13e7d2d1be88cea0396c761f0ce6af66",
+      "policy": "qbank_liquidity_use",
+      "source": "QBank operating reserve",
+      "version": 1,
+      "limitRule": "A user starts with a small loan limit. Daily Quorable activity can increase that limit. Fully repaid prior QBank loans can increase it only when backed by enough daily activity claims, so borrow-and-repay loops alone cannot farm higher limits. A user with an active loan cannot take another loan until it is paid off.",
+      "changeRule": "Any change creates a new policy hash and is visible in every later QBank transaction and checkpoint.",
+      "allowedPurpose": "QBank operating funds may only leave QBank through approved loan or credit draw flows.",
+      "repaidLoanBonus": 250,
+      "maxUserLoanLimit": 5000,
+      "balanceVisibility": "QBank may show balances and ledger proof, but balance display does not move Q$.",
+      "activityRewardBonus": 25,
+      "allowedOutflowKinds": [
+        "qbank_loan",
+        "quorable_business_loan",
+        "quorable_business_credit_draw"
+      ],
+      "blockedOutflowKinds": [
+        "transfer",
+        "admin_grant",
+        "manual_adjustment"
+      ],
+      "oneActiveLoanPerUser": true,
+      "startingUserLoanLimit": 100,
+      "activityClaimsPerRepaidLoanBonus": 7
+    },
+    "signatureStatus": "signed",
+    "transactionCount": 33,
+    "previousCheckpointHash": "ab87715a4121333e08e2550fc613626f58a7610123068078d152d9028cc99d08"
+  },
+  "createdAt": "2026-06-14T23:36:57.312Z"
+}
