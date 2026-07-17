@@ -1,21 +1,21 @@
 {
   "ledger": "qbank",
-  "checkpointHash": "3b6676ef3735283c1c3341e8d48feb85da2ea70210c8590afdf775df0c531056",
-  "chainHead": "03505e05eaec1ae842d0b8b4b0afa10de770541579117f59e3e7dff9d1680511",
-  "transactionCount": 64,
-  "circulating": 131500,
+  "checkpointHash": "6ed543d05c2bcfb2fb821ebb03b550b6229ad81cc5bcb3e348f01caca5147a60",
+  "chainHead": "e5336e8adb75bf6af45dfd02b7a1641277d0c3b3c1b59d145b7416c6440b68d5",
+  "transactionCount": 65,
+  "circulating": 132000,
   "fixedSupply": 21000000,
-  "previousCheckpointHash": "42779b3d0ec5a7485de39fc0bc7bf797231c4ba5d7e5d607c2334a3fc8ba00a1",
-  "signature": "F16yrLQPTFweepO2O/X5UUfYFf9wDOYRPHXadZcN2tqKg/jjIy8Pp6xDOEspXcCyM9l0/btQxpqzfmKiWFoCDg==",
+  "previousCheckpointHash": "3b6676ef3735283c1c3341e8d48feb85da2ea70210c8590afdf775df0c531056",
+  "signature": "hI064Cn3EuR2KpHbyN5zD88Y6Zeh9UKWHEGa35uOlktbQGpqps2uShMDHALAFx07mif3U8M2SU/TXSAF1pVbDQ==",
   "publicKey": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEASXRR7I2GmYb+Cn1Y7ohteXtpVU/WqT8KS4OI3MYhFhU=\n-----END PUBLIC KEY-----\n",
   "signatureAlgorithm": "ed25519",
   "signatureStatus": "signed",
   "payload": {
     "ledger": "qbank",
     "version": 1,
-    "chainHead": "03505e05eaec1ae842d0b8b4b0afa10de770541579117f59e3e7dff9d1680511",
-    "createdAt": "2026-07-16T09:49:28.789Z",
-    "circulating": 131500,
+    "chainHead": "e5336e8adb75bf6af45dfd02b7a1641277d0c3b3c1b59d145b7416c6440b68d5",
+    "createdAt": "2026-07-17T10:44:28.156Z",
+    "circulating": 132000,
     "fixedSupply": 21000000,
     "releasePolicy": {
       "hash": "8597f17493ad616d271e8fd67197230a98bced5f2500ce2d00df37e676d32dc6",
@@ -39,19 +39,19 @@
         "q_reserve_daily_loan"
       ]
     },
-    "checkpointHash": "3b6676ef3735283c1c3341e8d48feb85da2ea70210c8590afdf775df0c531056",
+    "checkpointHash": "6ed543d05c2bcfb2fb821ebb03b550b6229ad81cc5bcb3e348f01caca5147a60",
     "policyCoverage": {
       "policyHash": "8597f17493ad616d271e8fd67197230a98bced5f2500ce2d00df37e676d32dc6",
       "recommendedAction": null,
       "qbankUsePolicyHash": "4e3f705b91d4f753512d0897a39242db13e7d2d1be88cea0396c761f0ce6af66",
       "databasePolicyStatus": "valid",
-      "committedTransactions": 64,
+      "committedTransactions": 65,
       "invalidReserveReleases": [],
       "qbankUsePolicyEnforced": true,
       "invalidPolicyCommitments": [],
       "reserveReleasePolicyEnforced": true,
       "invalidQBankUsePolicyOutflows": [],
-      "qbankUseCommittedTransactions": 64,
+      "qbankUseCommittedTransactions": 65,
       "invalidQBankUsePolicyCommitments": []
     },
     "qbankUsePolicy": {
@@ -81,8 +81,8 @@
       "activityClaimsPerRepaidLoanBonus": 7
     },
     "signatureStatus": "signed",
-    "transactionCount": 64,
-    "previousCheckpointHash": "42779b3d0ec5a7485de39fc0bc7bf797231c4ba5d7e5d607c2334a3fc8ba00a1"
+    "transactionCount": 65,
+    "previousCheckpointHash": "3b6676ef3735283c1c3341e8d48feb85da2ea70210c8590afdf775df0c531056"
   },
-  "createdAt": "2026-07-16T09:49:28.526Z"
+  "createdAt": "2026-07-17T10:44:27.993Z"
 }
